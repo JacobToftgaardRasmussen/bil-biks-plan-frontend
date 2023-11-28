@@ -4,6 +4,7 @@ interface textInputProps {
   value: string | number | undefined;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   name: string;
+  type?: string;
 }
 
 export default function TextInput(props: textInputProps) {
@@ -16,7 +17,7 @@ export default function TextInput(props: textInputProps) {
         {props.name.charAt(0).toUpperCase() + props.name.slice(1)}
       </label>
       <input
-        type="text"
+        type={props.type ?? "text"}
         id={props.name}
         name={props.name}
         value={props.value}

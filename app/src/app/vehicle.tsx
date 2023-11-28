@@ -26,21 +26,21 @@ export default function Vehicle() {
   }
 
   interface FormData {
-    make: string | undefined;
-    model: string | undefined;
-    licensePlate: string | undefined;
-    year: number | undefined;
-    trimLevel: string | undefined;
-    priceClass: number | undefined;
+    make: string;
+    model: string;
+    licensePlate: string;
+    year: string;
+    trimLevel: string;
+    priceClass: string;
   }
 
   const [formData, setFormData] = useState<FormData>({
-    make: undefined,
-    model: undefined,
-    licensePlate: undefined,
-    year: undefined,
-    trimLevel: undefined,
-    priceClass: undefined,
+    make: "",
+    model: "",
+    licensePlate: "",
+    year: "",
+    trimLevel: "",
+    priceClass: "",
   });
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
