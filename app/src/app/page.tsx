@@ -8,11 +8,11 @@ import Vehicle from "./vehicle";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Collapse>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 max-w-2xl mx-auto">
+      <Collapse title="Vehicle">
         <Vehicle />
       </Collapse>
-      <Collapse>
+      <Collapse title="User">
         <User />
       </Collapse>
     </main>
