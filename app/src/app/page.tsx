@@ -15,6 +15,9 @@ export default function Home() {
       <Collapse title="User">
         <User />
       </Collapse>
+      <Collapse title="Rental agreements">
+        <RentalAgreement />
+      </Collapse>
     </main>
   );
 }
